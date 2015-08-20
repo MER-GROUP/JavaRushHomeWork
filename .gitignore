@@ -16,3 +16,6 @@ hs_err_pid*
 
 # Git
 .gitignore
+
+#Notepad++
+*noPlugin
