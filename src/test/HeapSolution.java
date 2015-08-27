@@ -1,10 +1,7 @@
 //Всем привет. Действительно были ошибки. Ошибки я исправил и //сдал. Данный вариант еще с ошибками. Удачи)
 package test;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.util.*;
 import java.util.List;
 
@@ -122,6 +119,25 @@ public class HeapSolution extends AbstractList<String> implements List<String>, 
         for (Object o:list){
             System.out.println(o + "parent - " + ((HeapSolution) list).getParent((String) o));
         }
+
+        System.out.println("\n===== SERIALIZATION and DESERIALIZATION =====");
+        System.out.println("Collect before serializable " + list);
+        System.out.print("Save list");
+        File file=new File("D://TEMP//111.txt");
+        FileOutputStream fos = new FileOutputStream(file);
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(list);
+        oos.close();
+        fos.close();
+        System.out.println(" Serializable done");
+        System.out.print("Load list");
+        FileInputStream fis = new FileInputStream(file);
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        HeapSolution list2 = (HeapSolution) ois.readObject();
+        ois.close();
+        fis.close();
+        System.out.println(" Deserializable done");
+        System.out.println("Collect after deserializable " + list2);
     }
 
     @Override

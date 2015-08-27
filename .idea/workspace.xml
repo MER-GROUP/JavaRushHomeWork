@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49e868cb-6c28-469e-9a04-9674b5bddb2b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/HeapSolution.java" afterPath="$PROJECT_DIR$/src/test/HeapSolution.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level20/lesson10/bonus04/Solution.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level20/lesson10/bonus04/Solution.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,42 +67,19 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level20/lesson10/bonus04/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1037736">
-              <caret line="883" column="120" selection-start-line="883" selection-start-column="120" selection-end-line="883" selection-end-column="120" />
+            <state vertical-scroll-proportion="0.38679245">
+              <caret line="472" column="97" selection-start-line="472" selection-start-column="97" selection-end-line="472" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1440664079365" expanded="false" signature="2105:12102" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Iterator.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Iterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#3380#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collection.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#27819#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#26270#26271#0" expanded="false" />
-                <element signature="e#26326#26327#0" expanded="false" />
-                <element signature="e#26957#26958#0" expanded="false" />
-                <element signature="e#27022#27023#0" expanded="false" />
-                <element signature="e#27751#27752#0" expanded="false" />
-                <element signature="e#27815#27816#0" expanded="false" />
+                <element signature="e#23814#23815#0" expanded="true" />
+                <element signature="e#23854#23855#0" expanded="true" />
+                <element signature="e#28953#28961#0" expanded="true" />
+                <element signature="e#29177#29185#0" expanded="true" />
+                <element signature="e#29543#29549#0" expanded="true" />
+                <element signature="e#38917#38923#0" expanded="true" />
+                <marker date="1440685104738" expanded="true" signature="2442:12796" placeholder="..." />
+                <marker date="1440685104738" expanded="true" signature="2442:14734" placeholder="..." />
+                <marker date="1440685104738" expanded="true" signature="2442:15139" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -111,53 +89,7 @@
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#39347#0" expanded="false" />
-                <element signature="e#8008#8009#0" expanded="false" />
-                <element signature="e#8036#8037#0" expanded="false" />
-                <element signature="e#8248#8249#0" expanded="false" />
-                <element signature="e#8275#8276#0" expanded="false" />
-                <element signature="e#8938#8939#0" expanded="false" />
-                <element signature="e#8965#8966#0" expanded="false" />
-                <element signature="e#15878#15879#0" expanded="false" />
-                <element signature="e#15927#15928#0" expanded="false" />
-                <element signature="e#16099#16100#0" expanded="false" />
-                <element signature="e#16149#16150#0" expanded="false" />
-                <element signature="e#16416#16417#0" expanded="false" />
-                <element signature="e#16470#16471#0" expanded="false" />
-                <element signature="e#19921#19922#0" expanded="false" />
-                <element signature="e#19954#19955#0" expanded="false" />
-                <element signature="e#20484#20485#0" expanded="false" />
-                <element signature="e#20520#20521#0" expanded="false" />
-                <element signature="e#20770#20771#0" expanded="false" />
-                <element signature="e#20799#20800#0" expanded="false" />
-                <element signature="e#23214#23215#0" expanded="false" />
-                <element signature="e#23241#23242#0" expanded="false" />
-                <element signature="e#23699#23700#0" expanded="false" />
-                <element signature="e#23735#23736#0" expanded="false" />
-                <element signature="e#24161#24162#0" expanded="false" />
-                <element signature="e#24193#24194#0" expanded="false" />
-                <element signature="e#29442#29443#0" expanded="false" />
-                <element signature="e#29489#29490#0" expanded="false" />
-                <element signature="e#29802#29803#0" expanded="false" />
-                <element signature="e#29847#29848#0" expanded="false" />
-                <element signature="e#29878#29879#0" expanded="false" />
-                <element signature="e#29914#29915#0" expanded="false" />
-                <element signature="e#36042#36043#0" expanded="false" />
-                <element signature="e#36098#36099#0" expanded="false" />
-                <element signature="e#39243#39244#0" expanded="false" />
-                <element signature="e#39336#39337#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractSequentialList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractSequentialList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="238" column="21" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
+              <caret line="1019" column="18" selection-start-line="1019" selection-start-column="18" selection-end-line="1019" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -167,40 +99,8 @@
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="518" column="58" selection-start-line="518" selection-start-column="58" selection-end-line="518" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#26981#0" expanded="false" />
-                <element signature="e#4990#4991#0" expanded="false" />
-                <element signature="e#5047#5048#0" expanded="false" />
-                <element signature="e#13102#13103#0" expanded="false" />
-                <element signature="e#13144#13145#0" expanded="false" />
-                <element signature="e#13579#13580#0" expanded="false" />
-                <element signature="e#13616#13617#0" expanded="false" />
-                <element signature="e#13654#13655#0" expanded="false" />
-                <element signature="e#13693#13694#0" expanded="false" />
-                <element signature="e#22195#22196#0" expanded="false" />
-                <element signature="e#22251#22252#0" expanded="false" />
-                <element signature="e#24472#24473#0" expanded="false" />
-                <element signature="e#24509#24510#0" expanded="false" />
-                <element signature="e#24792#24793#0" expanded="false" />
-                <element signature="e#24849#24850#0" expanded="false" />
-                <element signature="e#25083#25084#0" expanded="false" />
-                <element signature="e#25142#25143#0" expanded="false" />
-                <element signature="e#25382#25383#0" expanded="false" />
-                <element signature="e#25443#25444#0" expanded="false" />
-                <element signature="e#25485#25486#0" expanded="false" />
-                <element signature="e#25550#25551#0" expanded="false" />
-                <element signature="e#25740#25741#0" expanded="false" />
-                <element signature="e#25780#25781#0" expanded="false" />
-                <element signature="e#26007#26008#0" expanded="false" />
-                <element signature="e#26069#26070#0" expanded="false" />
-                <element signature="e#26442#26443#0" expanded="false" />
-                <element signature="e#26496#26497#0" expanded="false" />
-                <element signature="e#26798#26799#0" expanded="false" />
-                <element signature="e#26845#26846#0" expanded="false" />
-                <element signature="e#26903#26904#0" expanded="false" />
-                <element signature="e#26977#26978#0" expanded="false" />
-              </folding>
+              <caret line="537" column="15" selection-start-line="537" selection-start-column="15" selection-end-line="537" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,7 +109,7 @@
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractCollection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="369" column="19" selection-start-line="369" selection-start-column="19" selection-end-line="369" selection-end-column="19" />
+              <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -220,27 +120,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="201" column="24" selection-start-line="201" selection-start-column="24" selection-end-line="201" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#10204#0" expanded="false" />
-                <element signature="e#621#622#0" expanded="false" />
-                <element signature="e#704#705#0" expanded="false" />
-                <element signature="e#1410#1411#0" expanded="false" />
-                <element signature="e#1471#1472#0" expanded="false" />
-                <element signature="e#2786#2787#0" expanded="false" />
-                <element signature="e#2837#2838#0" expanded="false" />
-                <element signature="e#3914#3915#0" expanded="false" />
-                <element signature="e#3960#3961#0" expanded="false" />
-                <element signature="e#4400#4401#0" expanded="false" />
-                <element signature="e#4440#4441#0" expanded="false" />
-                <element signature="e#5014#5015#0" expanded="false" />
-                <element signature="e#5077#5078#0" expanded="false" />
-                <element signature="e#5960#5961#0" expanded="false" />
-                <element signature="e#6014#6015#0" expanded="false" />
-                <element signature="e#8380#8381#0" expanded="false" />
-                <element signature="e#8414#8415#0" expanded="false" />
-                <element signature="e#8972#8973#0" expanded="false" />
-                <element signature="e#9006#9007#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -259,12 +139,9 @@
         <entry file="file://$PROJECT_DIR$/src/test/HeapSolution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="169" column="48" selection-start-line="169" selection-start-column="48" selection-end-line="169" selection-end-column="48" />
+              <caret line="143" column="27" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
               <folding>
-                <element signature="e#8079#8080#0" expanded="true" />
-                <element signature="e#8162#8163#0" expanded="true" />
-                <element signature="e#9061#9062#0" expanded="true" />
-                <element signature="e#9110#9111#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -394,7 +271,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages ProjectPane="false" />
       <showMembers ProjectPane="false" />
       <showModules />
@@ -405,7 +282,141 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="level20" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="level20" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bonus04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="level20" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaRushHomeWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -426,7 +437,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -545,6 +556,23 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="GriffonRunConfigurationType" factoryName="Griffon">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="true" />
+      <setting name="passParentEnv" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -556,6 +584,28 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SbtRunConfiguration" factoryName="SBT Task">
+      <setting name="tasks" value="" />
+      <setting name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
+      <module name="" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <method />
     </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
@@ -715,15 +765,15 @@
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1749634" sideWeight="0.4591195" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17782739" sideWeight="0.44698206" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2610063" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2893082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23584905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2203514" sideWeight="0.5408805" order="1" side_tool="true" content_ui="tabs" x="556" y="46" width="253" height="636" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22798742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21669106" sideWeight="0.553018" order="1" side_tool="true" content_ui="tabs" x="556" y="46" width="253" height="636" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18228404" sideWeight="0.5062893" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36949685" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -758,7 +808,8 @@
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="Update .gitignore v2" />
     <MESSAGE value="level 20 bonus 4 (half)" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 20 bonus 4 (half)" />
+    <MESSAGE value="level 20 bonus 4 (80%)" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 20 bonus 4 (80%)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -775,27 +826,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level20/lesson10/bonus01/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23026316">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level20/lesson10/bonus02/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4013158">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5394737">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/List002.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6381579">
@@ -1042,73 +1072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6645702">
-          <caret line="730" column="27" selection-start-line="730" selection-start-column="27" selection-end-line="730" selection-end-column="27" />
-          <folding>
-            <element signature="e#33104#33105#0" expanded="false" />
-            <element signature="e#33178#33179#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Tree007.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="15" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39347#0" expanded="false" />
-            <element signature="e#8008#8009#0" expanded="false" />
-            <element signature="e#8036#8037#0" expanded="false" />
-            <element signature="e#8248#8249#0" expanded="false" />
-            <element signature="e#8275#8276#0" expanded="false" />
-            <element signature="e#8938#8939#0" expanded="false" />
-            <element signature="e#8965#8966#0" expanded="false" />
-            <element signature="e#15878#15879#0" expanded="false" />
-            <element signature="e#15927#15928#0" expanded="false" />
-            <element signature="e#16099#16100#0" expanded="false" />
-            <element signature="e#16149#16150#0" expanded="false" />
-            <element signature="e#16416#16417#0" expanded="false" />
-            <element signature="e#16470#16471#0" expanded="false" />
-            <element signature="e#19921#19922#0" expanded="false" />
-            <element signature="e#19954#19955#0" expanded="false" />
-            <element signature="e#20484#20485#0" expanded="false" />
-            <element signature="e#20520#20521#0" expanded="false" />
-            <element signature="e#20770#20771#0" expanded="false" />
-            <element signature="e#20799#20800#0" expanded="false" />
-            <element signature="e#23214#23215#0" expanded="false" />
-            <element signature="e#23241#23242#0" expanded="false" />
-            <element signature="e#23699#23700#0" expanded="false" />
-            <element signature="e#23735#23736#0" expanded="false" />
-            <element signature="e#24161#24162#0" expanded="false" />
-            <element signature="e#24193#24194#0" expanded="false" />
-            <element signature="e#29442#29443#0" expanded="false" />
-            <element signature="e#29489#29490#0" expanded="false" />
-            <element signature="e#29802#29803#0" expanded="false" />
-            <element signature="e#29847#29848#0" expanded="false" />
-            <element signature="e#29878#29879#0" expanded="false" />
-            <element signature="e#29914#29915#0" expanded="false" />
-            <element signature="e#36042#36043#0" expanded="false" />
-            <element signature="e#36098#36099#0" expanded="false" />
-            <element signature="e#39243#39244#0" expanded="false" />
-            <element signature="e#39336#39337#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractSequentialList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="238" column="21" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,70 +1086,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractList.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33223686">
+          <caret line="3207" column="28" selection-start-line="3207" selection-start-column="28" selection-end-line="3207" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="518" column="58" selection-start-line="518" selection-start-column="58" selection-end-line="518" selection-end-column="58" />
+          <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49342105">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
           <folding>
-            <element signature="e#0#26981#0" expanded="false" />
-            <element signature="e#4990#4991#0" expanded="false" />
-            <element signature="e#5047#5048#0" expanded="false" />
-            <element signature="e#13102#13103#0" expanded="false" />
-            <element signature="e#13144#13145#0" expanded="false" />
-            <element signature="e#13579#13580#0" expanded="false" />
-            <element signature="e#13616#13617#0" expanded="false" />
-            <element signature="e#13654#13655#0" expanded="false" />
-            <element signature="e#13693#13694#0" expanded="false" />
-            <element signature="e#22195#22196#0" expanded="false" />
-            <element signature="e#22251#22252#0" expanded="false" />
-            <element signature="e#24472#24473#0" expanded="false" />
-            <element signature="e#24509#24510#0" expanded="false" />
-            <element signature="e#24792#24793#0" expanded="false" />
-            <element signature="e#24849#24850#0" expanded="false" />
-            <element signature="e#25083#25084#0" expanded="false" />
-            <element signature="e#25142#25143#0" expanded="false" />
-            <element signature="e#25382#25383#0" expanded="false" />
-            <element signature="e#25443#25444#0" expanded="false" />
-            <element signature="e#25485#25486#0" expanded="false" />
-            <element signature="e#25550#25551#0" expanded="false" />
-            <element signature="e#25740#25741#0" expanded="false" />
-            <element signature="e#25780#25781#0" expanded="false" />
-            <element signature="e#26007#26008#0" expanded="false" />
-            <element signature="e#26069#26070#0" expanded="false" />
-            <element signature="e#26442#26443#0" expanded="false" />
-            <element signature="e#26496#26497#0" expanded="false" />
-            <element signature="e#26798#26799#0" expanded="false" />
-            <element signature="e#26845#26846#0" expanded="false" />
-            <element signature="e#26903#26904#0" expanded="false" />
-            <element signature="e#26977#26978#0" expanded="false" />
+            <element signature="e#2496#2497#0" expanded="false" />
+            <element signature="e#2561#2562#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27819#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#26270#26271#0" expanded="false" />
-            <element signature="e#26326#26327#0" expanded="false" />
-            <element signature="e#26957#26958#0" expanded="false" />
-            <element signature="e#27022#27023#0" expanded="false" />
-            <element signature="e#27751#27752#0" expanded="false" />
-            <element signature="e#27815#27816#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-12.914474">
+          <caret line="181" column="31" selection-start-line="181" selection-start-column="31" selection-end-line="181" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Iterator.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractSequentialList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24342105">
+          <caret line="236" column="7" selection-start-line="236" selection-start-column="7" selection-end-line="236" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#3380#0" expanded="false" />
-          </folding>
+          <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,27 +1139,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="201" column="24" selection-start-line="201" selection-start-column="24" selection-end-line="201" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#10204#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#704#705#0" expanded="false" />
-            <element signature="e#1410#1411#0" expanded="false" />
-            <element signature="e#1471#1472#0" expanded="false" />
-            <element signature="e#2786#2787#0" expanded="false" />
-            <element signature="e#2837#2838#0" expanded="false" />
-            <element signature="e#3914#3915#0" expanded="false" />
-            <element signature="e#3960#3961#0" expanded="false" />
-            <element signature="e#4400#4401#0" expanded="false" />
-            <element signature="e#4440#4441#0" expanded="false" />
-            <element signature="e#5014#5015#0" expanded="false" />
-            <element signature="e#5077#5078#0" expanded="false" />
-            <element signature="e#5960#5961#0" expanded="false" />
-            <element signature="e#6014#6015#0" expanded="false" />
-            <element signature="e#8380#8381#0" expanded="false" />
-            <element signature="e#8414#8415#0" expanded="false" />
-            <element signature="e#8972#8973#0" expanded="false" />
-            <element signature="e#9006#9007#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,10 +1151,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractCollection.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/io/ObjectOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="369" column="19" selection-start-line="369" selection-start-column="19" selection-end-line="369" selection-end-column="19" />
+          <caret line="161" column="13" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/io/ObjectInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1299" column="19" selection-start-line="1299" selection-start-column="19" selection-end-line="1299" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="537" column="15" selection-start-line="537" selection-start-column="15" selection-end-line="537" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1019" column="18" selection-start-line="1019" selection-start-column="18" selection-end-line="1019" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1233,23 +1186,28 @@
     <entry file="file://$PROJECT_DIR$/src/test/HeapSolution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="169" column="48" selection-start-line="169" selection-start-column="48" selection-end-line="169" selection-end-column="48" />
+          <caret line="143" column="27" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
           <folding>
-            <element signature="e#8079#8080#0" expanded="true" />
-            <element signature="e#8162#8163#0" expanded="true" />
-            <element signature="e#9061#9062#0" expanded="true" />
-            <element signature="e#9110#9111#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level20/lesson10/bonus04/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1037736">
-          <caret line="883" column="120" selection-start-line="883" selection-start-column="120" selection-end-line="883" selection-end-column="120" />
+        <state vertical-scroll-proportion="0.38679245">
+          <caret line="472" column="97" selection-start-line="472" selection-start-column="97" selection-end-line="472" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1440664079365" expanded="false" signature="2105:12102" placeholder="..." />
+            <element signature="e#23814#23815#0" expanded="true" />
+            <element signature="e#23854#23855#0" expanded="true" />
+            <element signature="e#28953#28961#0" expanded="true" />
+            <element signature="e#29177#29185#0" expanded="true" />
+            <element signature="e#29543#29549#0" expanded="true" />
+            <element signature="e#38917#38923#0" expanded="true" />
+            <marker date="1440685104738" expanded="true" signature="2442:12796" placeholder="..." />
+            <marker date="1440685104738" expanded="true" signature="2442:14734" placeholder="..." />
+            <marker date="1440685104738" expanded="true" signature="2442:15139" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,6 @@
 package com.javarush.test.level20.lesson10.bonus04;
 
-import java.io.Serializable;
+import java.io.*;
 import java.util.*;
 
 /* Свой список
@@ -52,15 +52,288 @@ import java.util.*;
 Метод main в тестировании не участвует
 */
 public class Solution extends AbstractList<String> implements List<String>,Cloneable,Serializable {
+    //serialVersionUID//////////////////////////////////////////////////////////////////////////////////////////////////
+    public static final long serialVersionUID = 12412468751456431L;
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     //main//////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //чтобы меньше писать кода - инкапсуляцию и полиморфизм не соблюдаю !!!
     //т.к. этого я не соблюдаю то все пишу итерационными способами !!!
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) throws CloneNotSupportedException, IOException, ClassNotFoundException {
         //если так задекларировать listTree то Solution не будет наследовать Object и
         //метод clone работать не будет.
         //List<String> listTree = new Solution();
         //поэтому объявляем так , Solution наследует Object
-        Solution listTree = new Solution();
+
+//        Solution listTree = new Solution();
+//        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
+//
+//        for (int i = 1; i < 16; i++) {
+//            listTree.add(String.valueOf(i));
+//        }
+//        System.out.println(listTree);
+//
+//        System.out.println("---------isEmpty()-size()---------");
+//        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
+//        List<String> list2222 = new Solution();
+//        System.out.println("Check isEmpty: " + list2222.isEmpty() + " Size: " + list2222.size());
+//        list2222.add("test");
+//        System.out.println("Check isEmpty: " + list2222.isEmpty() + " Size: " + list2222.size());
+//        List<String> list1111 = new Solution();
+//        System.out.println("Check isEmpty: " + list1111.isEmpty() + " Size: " + list1111.size());
+//
+//        System.out.println("---------getParent()----------");
+//        System.out.println("\nExpected 3, actual is " + ((Solution) listTree).getParent("8"));
+//        //System.out.println("listTree.get(5)="+listTree.get(5));//check exception
+//        System.out.println("---------remove()-getParent()---------");
+//        listTree.remove("5");
+//        System.out.println(listTree);
+//        System.out.println("Expected null, actual is " + ((Solution) listTree).getParent("11"));
+//        System.out.println("listTree.remove(\"1\")");
+//        listTree.remove("2");
+//        System.out.println(listTree);
+//        System.out.println("listTree.root.item="+listTree.root.item);
+//        System.out.println("---------clear()----------");
+//        listTree.clear();
+//        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
+//        for (int i = 1; i < 16; i++) {
+//            listTree.add(String.valueOf(i));
+//        }
+//        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
+//        //For additional check correct work clone method
+//        System.out.println("---------clone()----------");
+//        Solution list = (Solution)listTree.clone();
+//        System.out.println("listTree = " + listTree);
+//        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
+//        System.out.println("list = " + list);
+//        System.out.println("Check isEmpty: " + list.isEmpty() + " Size: " + list.size());
+//        list.remove("5");
+//        System.out.println("listTree = " + listTree);
+//        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
+//        System.out.println("list = " + list);
+//        System.out.println("Check isEmpty: " + list.isEmpty() + " Size: " + list.size());
+//
+//        System.out.println("-------------------------------");
+//        System.out.println("Start value with using clone: " + listTree);
+//        System.out.println("\n===== REMOVE Remove 2 and 9 =====");
+//        list.remove("2");
+//        list.remove("9");
+//        System.out.println("list = " + list);
+//        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+//        System.out.println();
+//
+//        System.out.println("list.getLastNode().item = "+list.getLastNode().item);
+//        System.out.println("listTree.getLastNode().item = "+listTree.getLastNode().item);
+//
+//        System.out.println("\n===== ADD 16, 17, 18, 19, 20 =====");
+//        list.add("16");
+//        list.add("17");
+//        list.add("18");
+//        list.add("19");
+//        list.add("20");
+//        System.out.println("list = " + list);
+//        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+//        System.out.println();
+//
+//        System.out.println("list.getLastNode().item = "+list.getLastNode().item);
+//        System.out.println("list.getLastNode().parent.item = "+list.getLastNode().parent.item);
+//        System.out.println("list.getLastNode().parent.right.item = "+list.getLastNode().parent.right.item);
+//        System.out.println("list.getLastNode().parent.left.item = "+list.getLastNode().parent.left.item);
+//        System.out.println("list.getLastNode().parent.parent.item = "+list.getLastNode().parent.parent.item);
+//        System.out.println("list.getLastNode().parent..parent.item = "+list.getLastNode().parent.parent.parent.item);
+//
+//        System.out.println("\n===== REMOVE 18 and 20 =====");
+//        list.remove("18");
+//        list.remove("20");
+//        System.out.println("list = " + list);
+//        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+//
+//        System.out.println("\n===== ADD 21 and ... 32 =====");
+//        list.add("21");
+//        list.add("22");
+//        list.add("23");
+//        list.add("24");
+//        list.add("25");
+//        list.add("26");
+//        list.add("27");
+//        list.add("28");
+//        list.add("29");
+//        list.add("30");
+//        list.add("31");
+//        list.add("32");
+//        //list.add(null);
+//        System.out.println("list = " + list);
+//        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+//        System.out.println("\n---------------------------------------");
+//
+//        System.out.println("\n---------------------------------------");
+//        System.out.println("3 Expected 1, actual is " + ((Solution) list).getParent("3"));
+//        System.out.println("4 Expected 1, actual is " + ((Solution) list).getParent("4"));
+//        System.out.println("8 Expected 3, actual is " + ((Solution) list).getParent("8"));
+//        System.out.println("11 Expected null, actual is " + ((Solution) list).getParent("11"));
+//        System.out.println("15 Expected 7, actual is " + ((Solution) list).getParent("15"));
+//        System.out.println("16 Expected 7, actual is " + ((Solution) list).getParent("16"));
+//        System.out.println("10 Expected 4, actual is " + ((Solution) list).getParent("10"));
+//        System.out.println("17 Expected 8, actual is " + ((Solution) list).getParent("17"));
+//        System.out.println("19 Expected 10, actual is " + ((Solution) list).getParent("19"));
+//        System.out.println("21 Expected 10, actual is " + ((Solution) list).getParent("21"));
+//        System.out.println("22 Expected 15, actual is " + ((Solution) list).getParent("22"));
+//        System.out.println("--->> By task and add more item:");
+//        System.out.println("23 Expected 15, actual is " + ((Solution) list).getParent("23"));
+//        System.out.println("24 Expected 16, actual is " + ((Solution) list).getParent("24"));
+//        System.out.println("25 Expected 16, actual is " + ((Solution) list).getParent("25"));
+//        System.out.println("26 Expected 17, actual is " + ((Solution) list).getParent("26"));
+//        System.out.println("27 Expected 17, actual is " + ((Solution) list).getParent("27"));
+//        System.out.println("28 Expected 19, actual is " + ((Solution) list).getParent("28"));
+//        System.out.println("29 Expected 19, actual is " + ((Solution) list).getParent("29"));
+//        System.out.println("30 Expected 21, actual is " + ((Solution) list).getParent("30"));
+//        System.out.println("31 Expected 21, actual is " + ((Solution) list).getParent("31"));
+//        System.out.println("32 Expected 22, actual is " + ((Solution) list).getParent("32"));
+//        System.out.println("---------------------------------------");
+//        System.out.println("Size array = " + list.size() + " expected = 22");
+//        System.out.println();
+//
+//        System.out.println("=============== contains(Object o) test ==================");
+//        System.out.println("10 is = "+list.contains("10"));
+//        System.out.println("9 is = "+list.contains("9"));
+//        System.out.println("0 is = "+list.contains("0"));
+//        System.out.println("32 is = "+list.contains("32"));
+//        System.out.println("23 is = "+list.contains("23"));
+//
+//        System.out.println("=============== containsAll(Object o) test ==================");
+//        Solution solConAll=new Solution();
+//        solConAll.add("1");
+//        solConAll.add("16");
+//        solConAll.add("32");
+//        System.out.println("list.containsAll(solConAll) = "+list.containsAll(solConAll));
+//        solConAll.add("56");
+//        System.out.println("list.containsAll(solConAll) = "+list.containsAll(solConAll));
+//
+//        System.out.println("=============== iterator test for ==================");
+//        for (String s : list) System.out.print(s+ " ");
+//        System.out.println();
+//
+//        System.out.println("=============== Clone test ==================");
+//        System.out.println("Object: " + list + " --> Size = " + list.size());
+//        Solution sol = (Solution) list.clone();
+//        //list.remove("7"); //Select for test
+//        //System.out.println("Object: " + list + " --> Size = " + list.size());//Select for test
+//        System.out.println("Clone object: " + sol + " --> Size = " + sol.size());
+//        System.out.println("Result: " + list.containsAll(sol));
+//
+//        System.out.println("\nTest addAll: ");
+//        Solution add = new Solution();
+//        add.addAll(sol);
+//        System.out.println(add + " --> Size: " + add.size() + " = " + sol.size());
+//
+//        System.out.println("=============== Iterator test ===============");
+//        Iterator<String> itr = list.iterator();
+//        while (itr.hasNext()) {
+//            String a = itr.next();
+//            System.out.print(a + " ");
+//        }
+//        System.out.println("\nExpected size 22 = " + list.size());
+//
+//        System.out.println("\nIter remove");
+//        Iterator<String> itr2 = list.iterator();
+//        while (itr2.hasNext()) {
+//            if (itr2.next().contains("31")) {
+//                itr2.remove();
+//            }
+//        }
+//        System.out.println("For test " + list + " --> Size = " + list.size());
+//        System.out.println("Collect size " + list.size() + " Expected 21");
+//
+//        System.out.println("=============== hashCode test ===============");
+//        System.out.println("list.hashCode() = "+list.hashCode());
+//        System.out.println("sol.hashCode() = "+sol.hashCode());
+//
+//        System.out.println("=============== equals test ===============");
+//        System.out.println(list);
+//        System.out.println(sol);
+//        System.out.println("list.equals(sol) = "+list.equals(sol));
+//        Solution s1=new Solution();
+//        s1.add("1");
+//        s1.add("2");
+//        s1.add("3");
+//        Solution s2=new Solution();
+//        s2.add("1");
+//        s2.add("2");
+//        s2.add("3");
+//        System.out.println("s1.equals(s2) = "+s1.equals(s2));
+//
+//        System.out.println("=============== removeAll test ===============");
+//        Solution s3=new Solution();
+//        s3.add("1");
+//        s3.add("2");
+//        s3.add("3");
+//        s3.add("4");
+//        s3.add("5");
+//        s3.add("6");
+//        s3.add("7");
+//        s3.add("8");
+//        Solution s4=new Solution();
+//        s4.add("3");
+//        s4.add("6");
+//        s4.add("7");
+//        s4.add("8");
+//        System.out.println("s3 = "+s3);
+//        System.out.println("s4 = "+s4);
+//        s3.removeAll(s4);
+//        System.out.println("s3 = "+s3);
+//        System.out.println("s4 = "+s4);
+//
+//        System.out.println("=============== retainAll test ===============");
+//        Solution sRet=new Solution();
+//        sRet.add("3");
+//        sRet.add("6");
+//        System.out.println("s4 = "+s4);
+//        s4.retainAll(sRet);
+//        System.out.println("s4 = "+s4);
+//
+//        System.out.println("=============== toArray test ===============");
+//        System.out.println("s3 = "+s3);
+//        String[] array=s3.toArray();
+//        for (int i = 0; i < array.length; i++) {
+//            System.out.print(array[i] + " ");
+//        }
+//        System.out.println();
+//
+//        System.out.println("=============== toArray([]) test ===============");
+//        String[] array2=sRet.toArray();
+//        for (int i = 0; i < array2.length; i++) {
+//            System.out.print(array2[i] + " ");
+//        }
+//        String[] arrayFin=s3.toArray(array2);
+//        for (int i = 0; i < arrayFin.length; i++) {
+//            System.out.print(arrayFin[i] + " ");
+//        }
+//
+//        System.out.println("\n===== SERIALIZATION and DESERIALIZATION =====");
+//        System.out.println("Collect before serializable " + list);
+//        System.out.print("Save list");
+//        File file=new File("D://TEMP//111.txt");
+//        FileOutputStream fos = new FileOutputStream(file);
+//        ObjectOutputStream oos = new ObjectOutputStream(fos);
+//        oos.writeObject(list);
+//        oos.close();
+//        fos.close();
+//        System.out.println(" Serializable done");
+//        System.out.print("Load list");
+//        FileInputStream fis = new FileInputStream(file);
+//        ObjectInputStream ois = new ObjectInputStream(fis);
+//        Solution list2 = (Solution) ois.readObject();
+//        ois.close();
+//        fis.close();
+//        System.out.println(" Deserializable done");
+//        System.out.println("Collect after deserializable " + list2);
+//
+//        System.out.println("\n================ Clear test =================");
+//        System.out.println("Before: " + listTree);
+//        listTree.clear();
+//        System.out.println("After clear: " + listTree + (listTree.isEmpty() ? " OK" : " Badly"));
+
+        List<String> listTree = new Solution();
         System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
 
         for (int i = 1; i < 16; i++) {
@@ -68,7 +341,6 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         }
         System.out.println(listTree);
 
-        System.out.println("---------isEmpty()-size()---------");
         System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
         List<String> list2222 = new Solution();
         System.out.println("Check isEmpty: " + list2222.isEmpty() + " Size: " + list2222.size());
@@ -77,73 +349,34 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         List<String> list1111 = new Solution();
         System.out.println("Check isEmpty: " + list1111.isEmpty() + " Size: " + list1111.size());
 
-        System.out.println("---------getParent()----------");
         System.out.println("\nExpected 3, actual is " + ((Solution) listTree).getParent("8"));
-        //System.out.println("listTree.get(5)="+listTree.get(5));//check exception
-        System.out.println("---------remove()-getParent()---------");
         listTree.remove("5");
-        System.out.println(listTree);
         System.out.println("Expected null, actual is " + ((Solution) listTree).getParent("11"));
-        System.out.println("listTree.remove(\"1\")");
-        listTree.remove("2");
-        System.out.println(listTree);
-        System.out.println("listTree.root.item="+listTree.root.item);
-        System.out.println("---------clear()----------");
         listTree.clear();
-        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
         for (int i = 1; i < 16; i++) {
             listTree.add(String.valueOf(i));
         }
-        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
-        //For additional check correct work clone method
-        System.out.println("---------clone()----------");
-        Solution list = (Solution)listTree.clone();
-        System.out.println("listTree = " + listTree);
-        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
-        System.out.println("list = " + list);
-        System.out.println("Check isEmpty: " + list.isEmpty() + " Size: " + list.size());
-        list.remove("5");
-        System.out.println("listTree = " + listTree);
-        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
-        System.out.println("list = " + list);
-        System.out.println("Check isEmpty: " + list.isEmpty() + " Size: " + list.size());
 
-        System.out.println("-------------------------------");
+        //For additional check correct work clone method
+        Solution list = ((Solution)listTree).clone();
+
         System.out.println("Start value with using clone: " + listTree);
         System.out.println("\n===== REMOVE Remove 2 and 9 =====");
         list.remove("2");
         list.remove("9");
-        System.out.println("list = " + list);
-        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
-        System.out.println();
-
-        System.out.println("list.getLastNode().item = "+list.getLastNode().item);
-        System.out.println("listTree.getLastNode().item = "+listTree.getLastNode().item);
-
+        for (String s : list) System.out.print(s+ " ");
         System.out.println("\n===== ADD 16, 17, 18, 19, 20 =====");
         list.add("16");
         list.add("17");
         list.add("18");
         list.add("19");
         list.add("20");
-        System.out.println("list = " + list);
-        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
-        System.out.println();
-
-        System.out.println("list.getLastNode().item = "+list.getLastNode().item);
-        System.out.println("list.getLastNode().parent.item = "+list.getLastNode().parent.item);
-        System.out.println("list.getLastNode().parent.right.item = "+list.getLastNode().parent.right.item);
-        System.out.println("list.getLastNode().parent.left.item = "+list.getLastNode().parent.left.item);
-        System.out.println("list.getLastNode().parent.parent.item = "+list.getLastNode().parent.parent.item);
-        System.out.println("list.getLastNode().parent..parent.item = "+list.getLastNode().parent.parent.parent.item);
-
+        for (String s : list) System.out.print(s+ " ");
         System.out.println("\n===== REMOVE 18 and 20 =====");
         list.remove("18");
         list.remove("20");
-        System.out.println("list = " + list);
-        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
-
-        System.out.println("\n===== ADD 21 and ... 32 =====");
+        for (String s : list) System.out.print(s+ " ");
+        System.out.println("\n===== ADD 21 and 22 =====");
         list.add("21");
         list.add("22");
         list.add("23");
@@ -157,15 +390,12 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         list.add("31");
         list.add("32");
         //list.add(null);
-        System.out.println("list = " + list);
-        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
-        System.out.println("\n---------------------------------------");
-
+        for (String s : list) System.out.print(s+ " ");
         System.out.println("\n---------------------------------------");
         System.out.println("3 Expected 1, actual is " + ((Solution) list).getParent("3"));
         System.out.println("4 Expected 1, actual is " + ((Solution) list).getParent("4"));
         System.out.println("8 Expected 3, actual is " + ((Solution) list).getParent("8"));
-        System.out.println("11 Expected null, actual is " + ((Solution) list).getParent("11"));
+        System.out.println("11 Expected null, actual is " + ((Solution) list).getParent(null));
         System.out.println("15 Expected 7, actual is " + ((Solution) list).getParent("15"));
         System.out.println("16 Expected 7, actual is " + ((Solution) list).getParent("16"));
         System.out.println("10 Expected 4, actual is " + ((Solution) list).getParent("10"));
@@ -188,31 +418,11 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         System.out.println("Size array = " + list.size() + " expected = 22");
         System.out.println();
 
-        System.out.println("=============== contains(Object o) test ==================");
-        System.out.println("10 is = "+list.contains("10"));
-        System.out.println("9 is = "+list.contains("9"));
-        System.out.println("0 is = "+list.contains("0"));
-        System.out.println("32 is = "+list.contains("32"));
-        System.out.println("23 is = "+list.contains("23"));
-
-        System.out.println("=============== containsAll(Object o) test ==================");
-        Solution solConAll=new Solution();
-        solConAll.add("1");
-        solConAll.add("16");
-        solConAll.add("32");
-        System.out.println("list.containsAll(solConAll) = "+list.containsAll(solConAll));
-        solConAll.add("56");
-        System.out.println("list.containsAll(solConAll) = "+list.containsAll(solConAll));
-
-        System.out.println("=============== iterator test for ==================");
-        for (String s : list) System.out.print(s+ " ");
-        System.out.println();
-
         System.out.println("=============== Clone test ==================");
+
         System.out.println("Object: " + list + " --> Size = " + list.size());
-        Solution sol = (Solution) list.clone();
+        Solution sol = list.clone();
         //list.remove("7"); //Select for test
-        //System.out.println("Object: " + list + " --> Size = " + list.size());//Select for test
         System.out.println("Clone object: " + sol + " --> Size = " + sol.size());
         System.out.println("Result: " + list.containsAll(sol));
 
@@ -239,52 +449,28 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         System.out.println("For test " + list + " --> Size = " + list.size());
         System.out.println("Collect size " + list.size() + " Expected 21");
 
-        System.out.println("=============== hashCode test ===============");
-        System.out.println("list.hashCode() = "+list.hashCode());
-        System.out.println("sol.hashCode() = "+sol.hashCode());
+        System.out.println("\n===== SERIALIZATION and DESERIALIZATION =====");
+        System.out.println("Collect before serializable " + list);
+        System.out.print("Save list");
+        FileOutputStream fos = new FileOutputStream("file");
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(list);
+        oos.close();
+        fos.close();
+        System.out.println(" Serializable done");
+        System.out.print("Load list");
+        FileInputStream fis = new FileInputStream("file");
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        List<String> list2 = (List<String>) ois.readObject();
+        ois.close();
+        fis.close();
+        System.out.println(" Deserializable done");
+        System.out.println("Collect after deserializable " + list2);
 
-        System.out.println("=============== equals test ===============");
-        System.out.println(list);
-        System.out.println(sol);
-        System.out.println("list.equals(sol) = "+list.equals(sol));
-        Solution s1=new Solution();
-        s1.add("1");
-        s1.add("2");
-        s1.add("3");
-        Solution s2=new Solution();
-        s2.add("1");
-        s2.add("2");
-        s2.add("3");
-        System.out.println("s1.equals(s2) = "+s1.equals(s2));
-
-        System.out.println("=============== removeAll test ===============");
-        Solution s3=new Solution();
-        s3.add("1");
-        s3.add("2");
-        s3.add("3");
-        s3.add("4");
-        s3.add("5");
-        s3.add("6");
-        s3.add("7");
-        s3.add("8");
-        Solution s4=new Solution();
-        s4.add("3");
-        s4.add("6");
-        s4.add("7");
-        s4.add("8");
-        System.out.println("s3 = "+s3);
-        System.out.println("s4 = "+s4);
-        s3.removeAll(s4);
-        System.out.println("s3 = "+s3);
-        System.out.println("s4 = "+s4);
-
-        System.out.println("=============== removeAll test ===============");
-        Solution sRet=new Solution();
-        sRet.add("3");
-        sRet.add("6");
-        System.out.println("s4 = "+s4);
-        s4.retainAll(sRet);
-        System.out.println("s4 = "+s4);
+        System.out.println("\n================ Clear test =================");
+        System.out.println("Before: " + listTree);
+        listTree.clear();
+        System.out.println("After clear: " + listTree + (listTree.isEmpty() ? " OK" : " Badly"));
     }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //узел для Solution/////////////////////////////////////////////////////////////////////////////////////////////////
@@ -355,6 +541,8 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
 
     //получение родителя у узла/////////////////////////////////////////////////////////////////////////////////////////
     public String getParent(String value) {
+        //если value is null
+        if (null==value) return "null";
         //have to be implemented
         //получаем мнимую голову
         Node<String> head=root.next;
@@ -398,7 +586,9 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
 
     //добавление узлов в бинарную кучу//////////////////////////////////////////////////////////////////////////////////
     //корень бинарной кучи всегда есть у списка, но заказчик о его существовании  не должен знать
-    Node<String> root=new Node<String>("0");
+    //незабываем пометить что узел записывать ненадо ! т.к. там хранятся адреса !
+    //а ссылки и адреса мы сериализовать не можем !!!
+    private transient Node<String> root=new Node<String>("0");
     //return true - добавление прошло успешно
     //return false - добавление не прошло
     @Override
@@ -640,7 +830,8 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
     }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //копирование дерева////////////////////////////////////////////////////////////////////////////////////////////////
-    protected Object clone() throws CloneNotSupportedException {
+    protected Solution clone() throws CloneNotSupportedException {
+        //тырим из LinkedList.java и немного редактируем
         //вызываем родительский абстрактный метод, чтобы взять из него исключение CloneNotSupportedException
         //и пробросить его дальше
         super.clone();
@@ -881,5 +1072,101 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         }
         return modified;
         //return super.retainAll(c);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //преобразование дерева в массив////////////////////////////////////////////////////////////////////////////////////
+    //внаглую наследуемся от AbstractCollection.java.java и немного редактируем
+    @Override
+    public String[] toArray() {
+        // Estimate size of array; be prepared to see more or fewer elements
+        String[] r = new String[size()];
+        Iterator it = iterator();
+        for (int i = 0; i < r.length; i++) {
+            r[i] = (String) it.next();
+        }
+        return r;
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //преобразуем в массив дерево и дополнительный массив в общий массив////////////////////////////////////////////////
+    //внаглую наследуемся от AbstractCollection.java.java и ничего не меняем - все идеально подходит
+    //вот код
+    /*
+    // Estimate size of array; be prepared to see more or fewer elements
+    int size = size();
+    T[] r = a.length >= size ? a :
+            (T[])java.lang.reflect.Array
+                    .newInstance(a.getClass().getComponentType(), size);
+    Iterator<E> it = iterator();
+
+    for (int i = 0; i < r.length; i++) {
+        if (! it.hasNext()) { // fewer elements than expected
+            if (a == r) {
+                r[i] = null; // null-terminate
+            } else if (a.length < i) {
+                return Arrays.copyOf(r, i);
+            } else {
+                System.arraycopy(r, 0, a, 0, i);
+                if (a.length > i) {
+                    a[i] = null;
+                }
+            }
+            return a;
+        }
+        r[i] = (T)it.next();
+    }
+    // more elements than expected
+    return it.hasNext() ? finishToArray(r, it) : r;
+    */
+    @Override
+    public <T> T[] toArray(T[] a) {
+        return super.toArray(a);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //записать объект из потока/////////////////////////////////////////////////////////////////////////////////////////
+    //тырим из LinkedList.java и немного редактируем
+    //вот оригинальный код
+    /*
+    // Write out any hidden serialization magic
+    s.defaultWriteObject();
+    // Write out size
+    s.writeInt(size);
+    // Write out all elements in the proper order.
+    for (Node<E> x = first; x != null; x = x.next)
+            s.writeObject(x.item);
+    */
+    private void writeObject(ObjectOutputStream stream) throws IOException {
+        // Write out any hidden serialization magic
+        stream.defaultWriteObject();
+        // Write out size
+        stream.writeInt(size());
+        // Write out all elements in the proper order.
+        for (Node<String> x = root.next; x != null; x = x.next)
+            stream.writeObject(x.item);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //загрузить объект из потока////////////////////////////////////////////////////////////////////////////////////////
+    //тырим из LinkedList.java и немного редактируем
+    //вот оригинальный код
+    /*
+    // Read in any hidden serialization magic
+    s.defaultReadObject();
+    // Read in size
+    int size = s.readInt();
+    // Read in all elements in the proper order.
+    for (int i = 0; i < size; i++)
+    linkLast((E)s.readObject());
+    */
+    //тут порядок останется , но меняется структура дерева !!!
+    private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
+        // Read in any hidden serialization magic
+        stream.defaultReadObject();
+        // Read in size
+        int size = stream.readInt();
+        //создадим новое дерево (вызываем конструктор у узла)
+        //этим самым мы создаем спрятанный узел от заказчика
+        root=new Node<String>("0");
+        // Read in all elements in the proper order.
+        for (int i = 0; i < size; i++)
+            add((String)stream.readObject());
     }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
