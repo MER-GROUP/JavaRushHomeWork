@@ -1,10 +1,7 @@
 package com.javarush.test.level20.lesson10.bonus04;
 
 import java.io.Serializable;
-import java.util.AbstractList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /* Свой список
 Посмотреть, как реализован LinkedList.
@@ -117,7 +114,8 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         list.remove("2");
         list.remove("9");
         System.out.println("list = " + list);
-//        //for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+        System.out.println();
 
         System.out.println("list.getLastNode().item = "+list.getLastNode().item);
         System.out.println("listTree.getLastNode().item = "+listTree.getLastNode().item);
@@ -129,7 +127,8 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         list.add("19");
         list.add("20");
         System.out.println("list = " + list);
-//        //for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+        System.out.println();
 
         System.out.println("list.getLastNode().item = "+list.getLastNode().item);
         System.out.println("list.getLastNode().parent.item = "+list.getLastNode().parent.item);
@@ -142,7 +141,7 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         list.remove("18");
         list.remove("20");
         System.out.println("list = " + list);
-//        //for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
 
         System.out.println("\n===== ADD 21 and ... 32 =====");
         list.add("21");
@@ -159,7 +158,7 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         list.add("32");
         //list.add(null);
         System.out.println("list = " + list);
-//        //for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
+        for (String s : list) System.out.print(s+ " ");//нужно реализовать итератор !!!!!!!!!!!!!!
         System.out.println("\n---------------------------------------");
 
         System.out.println("\n---------------------------------------");
@@ -189,6 +188,103 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         System.out.println("Size array = " + list.size() + " expected = 22");
         System.out.println();
 
+        System.out.println("=============== contains(Object o) test ==================");
+        System.out.println("10 is = "+list.contains("10"));
+        System.out.println("9 is = "+list.contains("9"));
+        System.out.println("0 is = "+list.contains("0"));
+        System.out.println("32 is = "+list.contains("32"));
+        System.out.println("23 is = "+list.contains("23"));
+
+        System.out.println("=============== containsAll(Object o) test ==================");
+        Solution solConAll=new Solution();
+        solConAll.add("1");
+        solConAll.add("16");
+        solConAll.add("32");
+        System.out.println("list.containsAll(solConAll) = "+list.containsAll(solConAll));
+        solConAll.add("56");
+        System.out.println("list.containsAll(solConAll) = "+list.containsAll(solConAll));
+
+        System.out.println("=============== iterator test for ==================");
+        for (String s : list) System.out.print(s+ " ");
+        System.out.println();
+
+        System.out.println("=============== Clone test ==================");
+        System.out.println("Object: " + list + " --> Size = " + list.size());
+        Solution sol = (Solution) list.clone();
+        //list.remove("7"); //Select for test
+        //System.out.println("Object: " + list + " --> Size = " + list.size());//Select for test
+        System.out.println("Clone object: " + sol + " --> Size = " + sol.size());
+        System.out.println("Result: " + list.containsAll(sol));
+
+        System.out.println("\nTest addAll: ");
+        Solution add = new Solution();
+        add.addAll(sol);
+        System.out.println(add + " --> Size: " + add.size() + " = " + sol.size());
+
+        System.out.println("=============== Iterator test ===============");
+        Iterator<String> itr = list.iterator();
+        while (itr.hasNext()) {
+            String a = itr.next();
+            System.out.print(a + " ");
+        }
+        System.out.println("\nExpected size 22 = " + list.size());
+
+        System.out.println("\nIter remove");
+        Iterator<String> itr2 = list.iterator();
+        while (itr2.hasNext()) {
+            if (itr2.next().contains("31")) {
+                itr2.remove();
+            }
+        }
+        System.out.println("For test " + list + " --> Size = " + list.size());
+        System.out.println("Collect size " + list.size() + " Expected 21");
+
+        System.out.println("=============== hashCode test ===============");
+        System.out.println("list.hashCode() = "+list.hashCode());
+        System.out.println("sol.hashCode() = "+sol.hashCode());
+
+        System.out.println("=============== equals test ===============");
+        System.out.println(list);
+        System.out.println(sol);
+        System.out.println("list.equals(sol) = "+list.equals(sol));
+        Solution s1=new Solution();
+        s1.add("1");
+        s1.add("2");
+        s1.add("3");
+        Solution s2=new Solution();
+        s2.add("1");
+        s2.add("2");
+        s2.add("3");
+        System.out.println("s1.equals(s2) = "+s1.equals(s2));
+
+        System.out.println("=============== removeAll test ===============");
+        Solution s3=new Solution();
+        s3.add("1");
+        s3.add("2");
+        s3.add("3");
+        s3.add("4");
+        s3.add("5");
+        s3.add("6");
+        s3.add("7");
+        s3.add("8");
+        Solution s4=new Solution();
+        s4.add("3");
+        s4.add("6");
+        s4.add("7");
+        s4.add("8");
+        System.out.println("s3 = "+s3);
+        System.out.println("s4 = "+s4);
+        s3.removeAll(s4);
+        System.out.println("s3 = "+s3);
+        System.out.println("s4 = "+s4);
+
+        System.out.println("=============== removeAll test ===============");
+        Solution sRet=new Solution();
+        sRet.add("3");
+        sRet.add("6");
+        System.out.println("s4 = "+s4);
+        s4.retainAll(sRet);
+        System.out.println("s4 = "+s4);
     }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //узел для Solution/////////////////////////////////////////////////////////////////////////////////////////////////
@@ -204,6 +300,57 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         Node(E item) {
             this.item = item;
         }
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //наследум наш итератор/////////////////////////////////////////////////////////////////////////////////////////////
+    //и перегружаем абстрактные методы и один не астрактный метод (remove)
+    //сдираем все и перервбатываем из LinkedList.java или AbstractList.java
+    public class IteratorSolution implements Iterator{
+        //текущий индекс в списке
+        private int nextIndex;
+        //присваиваем мнимую голову возвращаемому узлу
+        private Node<String> lastReturned=root.next;
+        //присваиваем мнимую голову следующему узлу
+        private Node<String> next=root.next;
+
+        //-----------------------------------------------------------------------------------------------------
+        //есть ли следующий элемент в списке
+        @Override
+        public boolean hasNext() {
+            //если текущий индекс меньше размера то возвращаем истину, иначе ложь
+            return nextIndex < size();
+        }//----------------------------------------------------------------------------------------------------
+
+        //-----------------------------------------------------------------------------------------------------
+        //возвращаем текущий элемент в списке
+        @Override
+        public Object next() {
+            //проверка есть ли дальше узлы
+            if (!hasNext()) throw new NoSuchElementException();
+            //присваиваем присваиваем текущий узел возвращаемому
+            lastReturned = next;
+            //итерируемся на следующий узел
+            next = next.next;
+            //итерирую индекс нода
+            nextIndex++;
+            //возвращаю текущий узел
+            return lastReturned.item;
+        }//----------------------------------------------------------------------------------------------------
+
+        //-----------------------------------------------------------------------------------------------------
+        //удаляем текущий элемент из списка
+        @Override
+        public void remove() {
+            Solution.this.remove(lastReturned.item);
+        }//----------------------------------------------------------------------------------------------------
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //перегружаем итератор и возвращаем наш итератор////////////////////////////////////////////////////////////////////
+    //нужто чтобы работала конструкция for (String s : list)
+    //т.к. в цикле for итератор неявно вызывается по умолчанию
+    @Override
+    public Iterator<String> iterator() {
+        return new IteratorSolution();
     }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //получение родителя у узла/////////////////////////////////////////////////////////////////////////////////////////
@@ -519,5 +666,220 @@ public class Solution extends AbstractList<String> implements List<String>,Clone
         while (head.next!=null) head=head.next;
         //возвращаем последний нод
         return head;
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public String set(int index, String element) {
+        throw new UnsupportedOperationException();
+        //return super.set(index, element);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public boolean addAll(int index, Collection<? extends String> c) {
+        throw new UnsupportedOperationException();
+        //return super.addAll(index, c);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //добавляем все элементы сразу//////////////////////////////////////////////////////////////////////////////////////
+    //метод можно и не перегружать, т.к. все строки подходят и ничего менять не надо
+    //вот этот метод из AbstractCollection
+    /*
+    boolean modified = false;
+    for (E e : c)
+            if (add(e))
+    modified = true;
+    return modified;
+    */
+    @Override
+    public boolean addAll(Collection<? extends String> c) {
+        return super.addAll(c);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public void add(int index, String element) {
+        throw new UnsupportedOperationException();
+        //super.add(index, element);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public int indexOf(Object o) {
+        throw new UnsupportedOperationException();
+        //return super.indexOf(o);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //есть ли узел в списке или нет/////////////////////////////////////////////////////////////////////////////////////
+    @Override
+    public boolean contains(Object o) {
+        //берем мнимую голову
+        Node<String> head=root.next;
+        //ищем искомый узел в дереве
+        while (head!=null){
+            //узел в списке есть
+            if (o.equals(head.item)) return true;
+            //итерируемся
+            head=head.next;
+        }
+        //узла в списке нет
+        return false;
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //есть ли узлы в списке/////////////////////////////////////////////////////////////////////////////////////////////
+    //внаглую сдираем из AbstractCollection.java
+    //чтобы работало надо перегрузить итератор на свой
+    @Override
+    public boolean containsAll(Collection<?> c) {
+        for (Object e : c)
+            if (!contains(e))
+                return false;
+        return true;
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public String remove(int index) {
+        throw new UnsupportedOperationException();
+        //return super.remove(index);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    protected void removeRange(int fromIndex, int toIndex) {
+        throw new UnsupportedOperationException();
+        //super.removeRange(fromIndex, toIndex);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public int lastIndexOf(Object o) {
+        throw new UnsupportedOperationException();
+        //return super.lastIndexOf(o);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public List<String> subList(int fromIndex, int toIndex) {
+        throw new UnsupportedOperationException();
+        //return super.subList(fromIndex, toIndex);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException//////////////////////////////////
+    @Override
+    public ListIterator<String> listIterator(int index) {
+        throw new UnsupportedOperationException();
+        //return super.listIterator(index);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //конструктор - наследуем от AbstractList.java//////////////////////////////////////////////////////////////////////
+    //конструкторы не наследуются - поэтому вызываем суперкласс
+    //а при вызове суперкласса вызывается его конструктор
+    protected Solution() {
+        super();
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //метод finalize вызываем у Object.java/////////////////////////////////////////////////////////////////////////////
+    //он пуст и только пробрасывает исключение Throwable
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //в listIterator присутствуют методы доступа и взятия по индексу////////////////////////////////////////////////////
+    //а доступ по индексу запрещен, пользуемся исключением UnsupportedOperationException
+    @Override
+    public ListIterator<String> listIterator() {
+        throw new UnsupportedOperationException();
+        //return new IteratorSolution();
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //наследуем от AbstractList, ничего не меняем все устраивает////////////////////////////////////////////////////////
+    //вот код из AbstractList
+    /*
+    int hashCode = 1;
+    for (E e : this)
+    hashCode = 31*hashCode + (e==null ? 0 : e.hashCode());
+    return hashCode;
+    */
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //сравниваем два дерева/////////////////////////////////////////////////////////////////////////////////////////////
+    //наследуем от AbstractList и чуточку редактируем
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Solution))
+            return false;
+
+        Iterator<?> e1 = iterator();
+        Iterator<?> e2 = ((Solution) o).iterator();
+        while (e1.hasNext() && e2.hasNext()) {
+            Object o1 = e1.next();
+            Object o2 = e2.next();
+            if (!(o1==null ? o2==null : o1.equals(o2)))
+                return false;
+        }
+        //если списки разные по размеру то вернем ложь инате истину
+        return !(e1.hasNext() || e2.hasNext());
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //удалить все элементы или несколько////////////////////////////////////////////////////////////////////////////////
+    //внаглую наследуемся от AbstractCollection.java.java и ничего не меняем - все идеально подходит
+    //вот код
+    /*
+    Objects.requireNonNull(c);
+    boolean modified = false;
+    Iterator<?> it = iterator();
+    while (it.hasNext()) {
+        if (c.contains(it.next())) {
+            it.remove();
+            modified = true;
+        }
+    }
+    return modified;
+    */
+    @Override
+    public boolean removeAll(Collection<?> c) {
+        return super.removeAll(c);
+    }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //оставить все или несколько узлов указанные коллекцией/////////////////////////////////////////////////////////////
+    //внаглую наследуемся от AbstractCollection.java.java и немного редактируем
+    //вот код оригинал
+    /*
+    Objects.requireNonNull(c);
+    boolean modified = false;
+    Iterator<E> it = iterator();
+    while (it.hasNext()) {
+        if (!c.contains(it.next())) {
+            it.remove();
+            modified = true;
+        }
+    }
+    return modified;
+    */
+    //но так как мы удаляем ветками то алгоритм этот совлюдатся небудет
+    //логично былоб пустить исключение сюдаб - но да ладно ...
+    @Override
+    public boolean retainAll(Collection<?> c) {
+        Objects.requireNonNull(c);
+        boolean modified = false;
+        Iterator it = iterator();
+        while (it.hasNext()) {
+            if (!c.contains(it.next())) {
+                it.remove();
+                //задаем итератору начальную мнимую голову
+                it = iterator();
+                modified = true;
+            }
+        }
+        return modified;
+        //return super.retainAll(c);
     }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
