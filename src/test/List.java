@@ -1,5 +1,7 @@
 package test;
 
+import java.io.IOException;
+
 /**
  * Created by maxim on 20.07.2015.
  */
@@ -26,7 +28,8 @@ public class List {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException, IOException, ClassNotFoundException
+    {
         Node node=new Node();
         node.setElement(2);
         node.setNext(node);
