@@ -63,81 +63,146 @@ public class HeapSolution extends AbstractList<String> implements List<String>, 
 
     public static void main (String[]args)throws IOException, ClassNotFoundException, CloneNotSupportedException
     {
+        List<String> listTree = new HeapSolution();
+        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
 
-        List<String> list = new HeapSolution();
-        List<String> list1 = new HeapSolution();
-        list1.add("1231331");
-        list1.add(":-) 1");
-        System.out.println(list.size());
-        for (int i = 1; i <= 1022; i++)
-        {
-            list.add(":-) " + i);
+        for (int i = 1; i < 16; i++) {
+            listTree.add(String.valueOf(i));
         }
-        if (list.size() == 1022)
-            System.out.println("ok 1");
-        list.remove(":-) 512");
+        System.out.println(listTree);
 
-        if (list.size() == 1021)
-            System.out.println("ok 2");
-        list.remove(":-) 6");
+        System.out.println("Check isEmpty: " + listTree.isEmpty() + " Size: " + listTree.size());
+        List<String> list2222 = new HeapSolution();
+        System.out.println("Check isEmpty: " + list2222.isEmpty() + " Size: " + list2222.size());
+        list2222.add("test");
+        System.out.println("Check isEmpty: " + list2222.isEmpty() + " Size: " + list2222.size());
+        List<String> list1111 = new HeapSolution();
+        System.out.println("Check isEmpty: " + list1111.isEmpty() + " Size: " + list1111.size());
 
-        if (766 == list.size())
-            System.out.println("ok 3");
-        else
-            System.out.println(list.size() + " error 3");
-        list.remove(":-) 2");
-
-
-        if (510 == list.size())
-            System.out.println("ok 4");
-        else
-            System.out.println(list.size() + " error 4");
-        for (int i = 15; i <= 22; i++)
-        {
-            list.remove(":-) " + i);
+        System.out.println("\nExpected 3, actual is " + ((HeapSolution) listTree).getParent("8"));
+        listTree.remove("5");
+        System.out.println("Expected null, actual is " + ((HeapSolution) listTree).getParent("11"));
+        listTree.clear();
+        for (int i = 1; i < 16; i++) {
+            listTree.add(String.valueOf(i));
         }
 
-        if (7 == list.size())
-            System.out.println("ok 5");
-        else
-            System.out.println("error 5 list size is " + list.size());
-        //int[] ii = new int[] {1, 3, 4, 7, 8, 9, 10};
+        //For additional check correct work clone method
+        HeapSolution list = ((HeapSolution)listTree).clone();
 
-        System.out.println(("должно быть :-) 3, а по факту " + ((HeapSolution) list).getParent(":-) 7")));
-        System.out.println(("должно быть :-) 3, а по факту " + ((HeapSolution) list).getParent(":-) 8")));
-        System.out.println(("должно быть :-) 4, а по факту " + ((HeapSolution) list).getParent(":-) 9")));
-        System.out.println(("должно быть :-) 4, а по факту " + ((HeapSolution) list).getParent(":-) 10")));
-        System.out.println(("должно быть :-) 1, а по факту " + ((HeapSolution) list).getParent(":-) 3")));
-        System.out.println(("должно быть :-) 1, а по факту " + ((HeapSolution) list).getParent(":-) 4")));
-        System.out.println(("должно быть null, а по факту " + ((HeapSolution) list).getParent(":-) 1")));
-        for (Object o:list1){
-            System.out.println(o + "parent - " + ((HeapSolution) list).getParent((String) o));
+        System.out.println("Start value with using clone: " + listTree);
+        System.out.println("\n===== REMOVE Remove 2 and 9 =====");
+        list.remove("2");
+        list.remove("9");
+        for (String s : list) System.out.print(s+ " ");
+        System.out.println("\n===== ADD 16, 17, 18, 19, 20 =====");
+        list.add("16");
+        list.add("17");
+        list.add("18");
+        list.add("19");
+        list.add("20");
+        for (String s : list) System.out.print(s+ " ");
+        System.out.println("\n===== REMOVE 18 and 20 =====");
+        list.remove("18");
+        list.remove("20");
+        for (String s : list) System.out.print(s+ " ");
+        System.out.println("\n===== ADD 21 and 22 =====");
+        list.add("21");
+        list.add("22");
+        list.add("23");
+        list.add("24");
+        list.add("25");
+        list.add("26");
+        list.add("27");
+        list.add("28");
+        list.add("29");
+        list.add("30");
+        list.add("31");
+        list.add("32");
+        //list.add(null);
+        for (String s : list) System.out.print(s+ " ");
+        System.out.println("\n---------------------------------------");
+        System.out.println("1 Expected null, actual is " + ((HeapSolution) list).getParent("1"));
+        System.out.println("2 Expected null, actual is " + ((HeapSolution) list).getParent("2"));
+        System.out.println("3 Expected 1, actual is " + ((HeapSolution) list).getParent("3"));
+        System.out.println("4 Expected 1, actual is " + ((HeapSolution) list).getParent("4"));
+        System.out.println("8 Expected 3, actual is " + ((HeapSolution) list).getParent("8"));
+        System.out.println("11 Expected null, actual is " + ((HeapSolution) list).getParent(null));
+        System.out.println("15 Expected 7, actual is " + ((HeapSolution) list).getParent("15"));
+        System.out.println("16 Expected 7, actual is " + ((HeapSolution) list).getParent("16"));
+        System.out.println("10 Expected 4, actual is " + ((HeapSolution) list).getParent("10"));
+        System.out.println("17 Expected 8, actual is " + ((HeapSolution) list).getParent("17"));
+        System.out.println("19 Expected 10, actual is " + ((HeapSolution) list).getParent("19"));
+        System.out.println("21 Expected 10, actual is " + ((HeapSolution) list).getParent("21"));
+        System.out.println("22 Expected 15, actual is " + ((HeapSolution) list).getParent("22"));
+        System.out.println("--->> By task and add more item:");
+        System.out.println("23 Expected 15, actual is " + ((HeapSolution) list).getParent("23"));
+        System.out.println("24 Expected 16, actual is " + ((HeapSolution) list).getParent("24"));
+        System.out.println("25 Expected 16, actual is " + ((HeapSolution) list).getParent("25"));
+        System.out.println("26 Expected 17, actual is " + ((HeapSolution) list).getParent("26"));
+        System.out.println("27 Expected 17, actual is " + ((HeapSolution) list).getParent("27"));
+        System.out.println("28 Expected 19, actual is " + ((HeapSolution) list).getParent("28"));
+        System.out.println("29 Expected 19, actual is " + ((HeapSolution) list).getParent("29"));
+        System.out.println("30 Expected 21, actual is " + ((HeapSolution) list).getParent("30"));
+        System.out.println("31 Expected 21, actual is " + ((HeapSolution) list).getParent("31"));
+        System.out.println("32 Expected 22, actual is " + ((HeapSolution) list).getParent("32"));
+        System.out.println("---------------------------------------");
+        System.out.println("Size array = " + list.size() + " expected = 22");
+        System.out.println();
+
+        System.out.println("=============== Clone test ==================");
+
+        System.out.println("Object: " + list + " --> Size = " + list.size());
+        HeapSolution sol = list.clone();
+        //list.remove("7"); //Select for test
+        System.out.println("Clone object: " + sol + " --> Size = " + sol.size());
+        System.out.println("Result: " + list.containsAll(sol));
+
+        System.out.println("\nTest addAll: ");
+        HeapSolution add = new HeapSolution();
+        add.addAll(sol);
+        System.out.println(add + " --> Size: " + add.size() + " = " + sol.size());
+
+        System.out.println("=============== Iterator test ===============");
+        Iterator<String> itr = list.iterator();
+        while (itr.hasNext()) {
+            String a = itr.next();
+            System.out.print(a + " ");
         }
-        System.out.println("_____________________________");
-        //list1.retainAll(list);
-        list1.removeAll(list);
-        for (Object o:list){
-            System.out.println(o + "parent - " + ((HeapSolution) list).getParent((String) o));
+        System.out.println("\nExpected size 22 = " + list.size());
+
+        System.out.println("\nIter remove");
+        Iterator<String> itr2 = list.iterator();
+        while (itr2.hasNext()) {
+            if (itr2.next().contains("31")) {
+                itr2.remove();
+            }
         }
+        System.out.println("For test " + list + " --> Size = " + list.size());
+        System.out.println("Collect size " + list.size() + " Expected 21");
 
         System.out.println("\n===== SERIALIZATION and DESERIALIZATION =====");
         System.out.println("Collect before serializable " + list);
         System.out.print("Save list");
-        File file=new File("D://TEMP//111.txt");
-        FileOutputStream fos = new FileOutputStream(file);
+        FileOutputStream fos = new FileOutputStream("file");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(list);
         oos.close();
         fos.close();
         System.out.println(" Serializable done");
         System.out.print("Load list");
-        FileInputStream fis = new FileInputStream(file);
+        FileInputStream fis = new FileInputStream("file");
         ObjectInputStream ois = new ObjectInputStream(fis);
-        HeapSolution list2 = (HeapSolution) ois.readObject();
+        List<String> list2 = (List<String>) ois.readObject();
         ois.close();
         fis.close();
         System.out.println(" Deserializable done");
         System.out.println("Collect after deserializable " + list2);
+
+        System.out.println("\n================ Clear test =================");
+        System.out.println("Before: " + listTree);
+        listTree.clear();
+        System.out.println("After clear: " + listTree + (listTree.isEmpty() ? " OK" : " Badly"));
     }
 
     @Override
