@@ -67,8 +67,8 @@
       <file leaf-file-name="Условие задачи.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Условие задачи.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22421524">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -78,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Hippodrome.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
               <folding>
                 <element signature="e#262#263#0" expanded="true" />
                 <element signature="e#291#292#0" expanded="true" />
@@ -871,7 +871,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update .gitignore v2" />
     <MESSAGE value="level 20 bonus 4 (half)" />
     <MESSAGE value="level 20 bonus 4 (80%)" />
     <MESSAGE value="level 20 bonus 4 (100%) not check the test" />
@@ -896,7 +895,8 @@
     <MESSAGE value="level 21 lesson 16 big 01 part 04 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 05 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 06 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 21 lesson 16 big 01 part 06 completed" />
+    <MESSAGE value="level 21 lesson 16 big 01 part 07 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 21 lesson 16 big 01 part 07 completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1274,7 +1274,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Hippodrome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
           <folding>
             <element signature="e#262#263#0" expanded="true" />
             <element signature="e#291#292#0" expanded="true" />
@@ -1284,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Условие задачи.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22421524">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>

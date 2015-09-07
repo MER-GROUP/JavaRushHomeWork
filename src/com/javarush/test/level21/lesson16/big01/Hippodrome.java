@@ -27,8 +27,12 @@ public class Hippodrome {
         game.getHorses().add(thirdHorse);
     }
 
-    public void run(){
-        //
+    public void run() throws InterruptedException {
+        for (int i = 1; i <= 100; i++) {
+            this.move();
+            this.print();
+            Thread.sleep(500);
+        }
     }
     public void move(){
         //
