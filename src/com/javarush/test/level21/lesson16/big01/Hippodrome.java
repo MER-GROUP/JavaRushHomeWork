@@ -50,4 +50,20 @@ public class Hippodrome {
         System.out.println();
         System.out.println();
     }
+
+    public Horse getWinner(){
+        double temp=getHorses().get(0).getDistance();
+        Horse horse=getHorses().get(0);
+        for (int i = 1; i < getHorses().size(); i++) {
+            if (temp<getHorses().get(i).getDistance()){
+                temp=getHorses().get(i).getDistance();
+                horse=getHorses().get(i);
+            }
+        }
+        return horse;
+    }
+
+    public void printWinner(){
+        System.out.println("Winner is "+getWinner().getName()+"!");
+    }
 }
