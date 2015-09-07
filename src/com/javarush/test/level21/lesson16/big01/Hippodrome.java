@@ -13,7 +13,7 @@ public class Hippodrome {
         return horses;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         game=new Hippodrome();
 
         Horse firstHorse=new Horse("firstHorse",3,0);
@@ -25,6 +25,8 @@ public class Hippodrome {
         game.getHorses().add(firstHorse);
         game.getHorses().add(secondHorse);
         game.getHorses().add(thirdHorse);
+
+        game.run();
     }
 
     public void run() throws InterruptedException {
