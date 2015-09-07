@@ -67,8 +67,8 @@
       <file leaf-file-name="Условие задачи.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Условие задачи.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40358743">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -78,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Hippodrome.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding>
                 <element signature="e#282#283#0" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
@@ -91,11 +91,8 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Horse.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-              <folding>
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-              </folding>
+              <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -861,7 +858,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="level 20 bonus 4 Completed" />
     <MESSAGE value="level 21 lesson 2 task 1 completed" />
     <MESSAGE value="level 21 lesson 2 task 2 completed" />
     <MESSAGE value="level 21 lesson 2 task 3 completed" />
@@ -886,7 +882,8 @@
     <MESSAGE value="level 21 lesson 16 big 01 part 09 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 10 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 11 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 21 lesson 16 big 01 part 11 completed" />
+    <MESSAGE value="level 21 lesson 16 big 01 part 12 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 21 lesson 16 big 01 part 12 completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1247,18 +1244,15 @@
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Horse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-          </folding>
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Hippodrome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
           <folding>
             <element signature="e#282#283#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
@@ -1268,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level21/lesson16/big01/Условие задачи.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40358743">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding />
         </state>
       </provider>
