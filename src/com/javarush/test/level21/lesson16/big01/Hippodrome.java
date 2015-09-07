@@ -42,6 +42,10 @@ public class Hippodrome {
     }
 
     public void print(){
-        //
+        for (Horse itr: getHorses()){
+            itr.print();
+        }
+        System.out.println();
+        System.out.println();
     }
 }
