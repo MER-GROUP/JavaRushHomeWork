@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49e868cb-6c28-469e-9a04-9674b5bddb2b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt" afterPath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt" />
     </list>
@@ -63,11 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Условие задачи.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Условие задачи.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2690583">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -101,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Figure.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Figure.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.31390134">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
               <folding>
                 <element signature="e#214#215#0" expanded="true" />
                 <element signature="e#243#244#0" expanded="true" />
@@ -113,6 +114,8 @@
                 <element signature="e#292#293#0" expanded="true" />
                 <element signature="e#317#318#0" expanded="true" />
                 <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,8 +201,8 @@
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson13/task03/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Tetris.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Field.java" />
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java" />
       </list>
     </option>
   </component>
@@ -746,7 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="level 21 lesson 16 big 01 part 12 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 13 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 14 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 15 completed" />
@@ -771,7 +773,8 @@
     <MESSAGE value="level 22 lesson 18 big 01 task 06 completed" />
     <MESSAGE value="level 22 lesson 18 big 01 task 07 completed" />
     <MESSAGE value="level 22 lesson 18 big 01 task 08 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 22 lesson 18 big 01 task 08 completed" />
+    <MESSAGE value="level 22 lesson 18 big 01 task 09 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 22 lesson 18 big 01 task 09 completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1141,10 +1144,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31390134">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding>
             <element signature="e#214#215#0" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -1152,15 +1163,9 @@
             <element signature="e#292#293#0" expanded="true" />
             <element signature="e#317#318#0" expanded="true" />
             <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2690583">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
