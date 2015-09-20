@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -77,9 +77,14 @@
       <file leaf-file-name="Tetris.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Tetris.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31390134">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
+            <state vertical-scroll-proportion="0.49327356">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -732,7 +737,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="level 21 lesson 16 big 01 part 05 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 06 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 07 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 08 completed" />
@@ -757,7 +761,8 @@
     <MESSAGE value="level 22 lesson 13 task 02 completed" />
     <MESSAGE value="level 22 lesson 13 task 03 completed" />
     <MESSAGE value="level 22 lesson 18 big 01 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 22 lesson 18 big 01 completed" />
+    <MESSAGE value="level 22 lesson 18 big 01 task 02 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 22 lesson 18 big 01 task 02 completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1122,16 +1127,21 @@
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Tetris.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31390134">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="0.49327356">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
