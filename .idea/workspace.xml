@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49e868cb-6c28-469e-9a04-9674b5bddb2b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/FigureFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt" afterPath="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt" />
     </list>
@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -102,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Figure.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Figure.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31390134">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
                 <element signature="e#214#215#0" expanded="true" />
                 <element signature="e#243#244#0" expanded="true" />
@@ -116,6 +116,19 @@
                 <element signature="e#341#342#0" expanded="true" />
                 <element signature="e#607#608#0" expanded="true" />
                 <element signature="e#635#636#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FigureFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/FigureFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31390134">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding>
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/List008.java" />
         <option value="$PROJECT_DIR$/src/test/Tree001.java" />
         <option value="$PROJECT_DIR$/src/test/Tree002.java" />
         <option value="$PROJECT_DIR$/src/test/Tree003.java" />
@@ -201,8 +213,9 @@
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson13/task03/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Tetris.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Field.java" />
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/FigureFactory.java" />
       </list>
     </option>
   </component>
@@ -749,7 +762,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="level 21 lesson 16 big 01 part 13 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 14 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 15 completed" />
     <MESSAGE value="level 21 lesson 16 big 01 part 16 completed" />
@@ -774,7 +786,8 @@
     <MESSAGE value="level 22 lesson 18 big 01 task 07 completed" />
     <MESSAGE value="level 22 lesson 18 big 01 task 08 completed" />
     <MESSAGE value="level 22 lesson 18 big 01 task 09 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 22 lesson 18 big 01 task 09 completed" />
+    <MESSAGE value="level 22 lesson 18 big 01 task 10 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 22 lesson 18 big 01 task 10 completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -791,13 +804,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33223686">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/nio/file/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16447368">
@@ -1144,18 +1150,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Figure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31390134">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="e#214#215#0" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -1165,6 +1163,25 @@
             <element signature="e#341#342#0" expanded="true" />
             <element signature="e#607#608#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/Условие задачи.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level22/lesson18/big01/FigureFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31390134">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
