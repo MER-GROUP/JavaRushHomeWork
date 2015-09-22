@@ -8,6 +8,12 @@ public class Figure {
     private int y;
     private int[][] matrix;
 
+    public Figure(int x, int y, int[][] matrix) {
+        this.matrix = matrix;
+        this.x = x;
+        this.y = y;
+    }
+
     public int[][] getMatrix() {
         return matrix;
     }
@@ -45,6 +51,10 @@ public class Figure {
     }
 
     public void landed(){
+        //
+    }
+
+    public void rotate() {
         //
     }
 }

@@ -8,6 +8,11 @@ public class Field {
     private int height;
     private int[][] matrix;
 
+    public Field(int height, int width) {
+        this.height = height;
+        this.width = width;
+    }
+
     public int getHeight() {
         return height;
     }
