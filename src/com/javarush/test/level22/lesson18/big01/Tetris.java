@@ -88,6 +88,7 @@ public class Tetris
     public void step()
     {
         //опускам фигурку вниз
+        figure.down();
 
         //если разместить фигурку на текущем месте невозможно:
             //поднимаем обратно
@@ -95,6 +96,13 @@ public class Tetris
             //если фигурка приземлилась на самом верху - игра окончена
             //удаляем заполненные линии
             //создаем новую фигурку
+        if (!figure.isCurrentPositionAvailable()){
+            figure.up();
+            figure.landed();
+            isGameOver=figure.getY()<=1;
+            field.removeFullLines();
+            setFigure(FigureFactory.createRandomFigure(field.getWidth() / 2, 0));
+        }
     }
 
     /**
