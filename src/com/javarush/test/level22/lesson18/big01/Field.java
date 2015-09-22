@@ -8,9 +8,10 @@ public class Field {
     private int height;
     private int[][] matrix;
 
-    public Field(int height, int width) {
+    public Field(int width, int height) {
         this.height = height;
         this.width = width;
+        matrix=new int[getHeight()][getWidth()];
     }
 
     public int getHeight() {
@@ -26,7 +27,16 @@ public class Field {
     }
 
     public void print(){
-        //
+        for (int i = 0; i < getHeight(); i++) {
+            for (int j = 0; j < getWidth(); j++) {
+                if (getMatrix()[i][j]==0){
+                    System.out.print(".");
+                }else {
+                    System.out.print("X");
+                }
+            }
+            System.out.println();
+        }
     }
 
     public void removeFullLines(){
