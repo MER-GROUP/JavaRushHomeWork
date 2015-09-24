@@ -24,4 +24,14 @@ public class Snake {
     public boolean isAlive() {
         return isAlive;
     }
+
+    public Snake(int x,int y) {
+        sections=new ArrayList<>();
+        sections.add(new SnakeSection(x,y));
+        isAlive=true;
+    }
+
+    public void move(){
+        //
+    }
 }
