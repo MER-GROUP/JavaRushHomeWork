@@ -112,6 +112,24 @@ public class Room
         //Рисуем все кусочки змеи
         //Рисуем мышь
         //Выводим все это на экран
+        int[][] display=new int[getWidth()][getHeight()];
+        for (int i = 0; i < getSnake().getSections().size(); i++) {
+            if (i==0){
+                display[getSnake().getSections().get(i).getX()][getSnake().getSections().get(i).getY()]=2;
+            }else {
+                display[getSnake().getSections().get(i).getX()][getSnake().getSections().get(i).getY()]=1;
+            }
+        }
+        display[getMouse().getX()][getMouse().getY()]=3;
+        for (int i = 0; i < display.length; i++) {
+            for (int j = 0; j < display[i].length; j++) {
+                if (display[i][j]==0) System.out.print(".");
+                else if (display[i][j]==1) System.out.print("x");
+                else if (display[i][j]==2) System.out.print("X");
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
 
     /**
