@@ -76,17 +76,17 @@ public class Snake
     private void move(int dx, int dy)
     {
         //Создаем новую голову - новый "кусочек змеи".
-        SnakeSection head=new SnakeSection(dx,dy);
+        SnakeSection head=new SnakeSection(getX()+dx,getY()+dy);
         //Проверяем - не вылезла ли голова за границу комнаты
         checkBorders(head);
         //Проверяем - не пересекает ли змея  саму себя
         checkBody(head);
         //Проверяем - не съела ли змея мышь.
-        /*if (head.getX()==Room.game.getMouse().getX() && head.getY()==Room.game.getMouse().getY()){
+        if (head.getX()==Room.game.getMouse().getX() && head.getY()==Room.game.getMouse().getY()){
             Room.game.eatMouse();
         }else {
             getSections().remove(getSections().size()-1);
-        }*/
+        }
         //Двигаем змею.
         getSections().add(0,head);
 
