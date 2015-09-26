@@ -2,6 +2,7 @@ package com.javarush.test.level23.lesson13.big01;
 
 
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
 /**
  * Основной класс программы.
@@ -109,26 +110,34 @@ public class Room
     public void print()
     {
         //Создаем массив, куда будем "рисовать" текущее состояние игры
+        int[][] matrix = new int[height][width];
+
         //Рисуем все кусочки змеи
-        //Рисуем мышь
-        //Выводим все это на экран
-        int[][] display=new int[getWidth()][getHeight()];
-        for (int i = 0; i < getSnake().getSections().size(); i++) {
-            if (i==0){
-                display[getSnake().getSections().get(i).getX()][getSnake().getSections().get(i).getY()]=2;
-            }else {
-                display[getSnake().getSections().get(i).getX()][getSnake().getSections().get(i).getY()]=1;
-            }
+        ArrayList<SnakeSection> sections = new ArrayList<SnakeSection>(snake.getSections());
+        for (SnakeSection snakeSection : sections)
+        {
+            matrix[snakeSection.getY()][snakeSection.getX()] = 1;
         }
-        display[getMouse().getX()][getMouse().getY()]=3;
-        for (int i = 0; i < display.length; i++) {
-            for (int j = 0; j < display[i].length; j++) {
-                if (display[i][j]==0) System.out.print(".");
-                else if (display[i][j]==1) System.out.print("x");
-                else if (display[i][j]==2) System.out.print("X");
+
+        //Рисуем голову змеи (4 - если змея мертвая)
+        //matrix[snake.getY()][snake.getX()] = snake.isAlive() ? 2 : 4;
+        matrix[sections.get(0).getY()][sections.get(0).getX()] = snake.isAlive() ? 2 : 4;
+
+        //Рисуем мышь
+        matrix[mouse.getY()][mouse.getX()] = 3;
+
+        //Выводим все это на экран
+        String[] symbols = {" . ", " x ", " X ", "^_^", "RIP"};
+        for (int y = 0; y < height; y++)
+        {
+            for (int x = 0; x < width; x++)
+            {
+                System.out.print(symbols[matrix[y][x]]);
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println();
         System.out.println();
     }
 
@@ -162,49 +171,22 @@ public class Room
         game.run();
     }
 
+    //Массив "пауз" в зависимости от уровня.
+    private static int[] levelDelay = {1000, 600, 550, 500, 480, 460, 440, 420, 400, 380, 360, 340, 320, 300, 285, 270};
 
     /**
      * Прогрмма делает паузу, длинна которой зависит от длинны змеи.
      */
     public void sleep()
     {
-        try{
-            if (getSnake().getSections().size()==1){
-                Thread.sleep(500);
-            }
-            else if (getSnake().getSections().size()==2){
-                Thread.sleep(450);
-            }
-            else if (getSnake().getSections().size()==3){
-                Thread.sleep(430);
-            }
-            else if (getSnake().getSections().size()==4){
-                Thread.sleep(410);
-            }
-            else if (getSnake().getSections().size()==5){
-                Thread.sleep(400);
-            }
-            else if (getSnake().getSections().size()==6){
-                Thread.sleep(380);
-            }
-            else if (getSnake().getSections().size()==7){
-                Thread.sleep(360);
-            }
-            else if (getSnake().getSections().size()==8){
-                Thread.sleep(340);
-            }
-            else if (getSnake().getSections().size()==9){
-                Thread.sleep(320);
-            }
-            else if (getSnake().getSections().size()==10){
-                Thread.sleep(300);
-            }
-            else if (getSnake().getSections().size()>10){
-                Thread.sleep(200);
-            }
-        }catch (Exception e){
-            e.printStackTrace();
+        try
+        {
+            int level = snake.getSections().size();
+            int delay = level < 15 ? levelDelay[level] : 250;
+            Thread.sleep(delay);
         }
-
+        catch (InterruptedException e)
+        {
+        }
     }
 }
