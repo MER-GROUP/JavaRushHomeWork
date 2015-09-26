@@ -120,8 +120,7 @@ public class Room
         }
 
         //Рисуем голову змеи (4 - если змея мертвая)
-        //matrix[snake.getY()][snake.getX()] = snake.isAlive() ? 2 : 4;
-        matrix[sections.get(0).getY()][sections.get(0).getX()] = snake.isAlive() ? 2 : 4;
+        matrix[snake.getY()][snake.getX()] = snake.isAlive() ? 2 : 4;
 
         //Рисуем мышь
         matrix[mouse.getY()][mouse.getX()] = 3;
