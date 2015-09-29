@@ -20,3 +20,7 @@ file
 
 #Notepad++
 *noPlugin
+
+#CPP
+*.exe
+*.o
