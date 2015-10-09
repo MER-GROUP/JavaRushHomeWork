@@ -90,7 +90,8 @@ public class Util {
             }
             @Override
             public String getTM() {
-                return Company.Levis.fullName;
+                //return Company.Levis.fullName;
+                return Company.Levis.name();
             }
         }
 
