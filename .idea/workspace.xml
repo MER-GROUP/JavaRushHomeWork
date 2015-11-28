@@ -64,21 +64,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Условие задачи.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Условие задачи.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Условие задачи.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30501089">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Arcanoid.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Arcanoid.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Arcanoid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.6666667">
+              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
               <folding>
                 <element signature="e#333#334#0" expanded="true" />
                 <element signature="e#361#362#0" expanded="true" />
@@ -1035,7 +1035,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="level 23 lesson 13 big 01 task 14 completed" />
     <MESSAGE value="level 23 lesson 13 big 01 task 15 completed" />
     <MESSAGE value="level 23 lesson 13 big 01 task 16 completed" />
     <MESSAGE value="level 23 lesson 13 big 01 task 17 completed" />
@@ -1060,7 +1059,8 @@
     <MESSAGE value="level 24 lesson 14 big 01 part 01 completed" />
     <MESSAGE value="level 24 lesson 14 big 01 part 02 completed" />
     <MESSAGE value="level 24 lesson 14 big 01 part 03 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 24 lesson 14 big 01 part 03 completed" />
+    <MESSAGE value="level 24 lesson 14 big 01 part 04 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 24 lesson 14 big 01 part 04 completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1423,10 +1423,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Arcanoid.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Условие задачи.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Arcanoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6666667">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
           <folding>
             <element signature="e#333#334#0" expanded="true" />
             <element signature="e#361#362#0" expanded="true" />
@@ -1449,14 +1457,6 @@
             <element signature="e#1033#1034#0" expanded="true" />
             <element signature="e#1069#1070#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Условие задачи.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30501089">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
