@@ -26,6 +26,18 @@ public class Stand extends BaseObject {
 
     @Override
     public void move() {
-        //
+        if (1==getDirection()){
+            setX(getX()+getSpeed());
+        }
+        if (-1==getDirection()){
+            setX(getX()-getSpeed());
+        }
+    }
+
+    public void moveLeft(){
+        direction=-1;
+    }
+    public void moveRight(){
+        direction=1;
     }
 }
