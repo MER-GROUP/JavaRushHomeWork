@@ -17,7 +17,17 @@ public class Solution extends TimerTask {
             throw new NullPointerException();
         }
         this.original = original;
-        this.handler = null;    //init handler here
+        //this.handler = null;    //init handler here
+        this.handler= new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread t, Throwable e) {
+                String stringNameThread=t.getName().replaceAll(".","*");
+                String stringMessgeThrowable=e.getMessage().replace(t.getName(),stringNameThread);
+                e=new Exception(stringMessgeThrowable,e);
+                System.out.println(e.getMessage());
+                t.setName(stringNameThread);
+            }
+        };
     }
 
     public void run() {
@@ -25,7 +35,9 @@ public class Solution extends TimerTask {
             original.run();
         } catch (Throwable cause) {
             Thread currentThread = Thread.currentThread();
-            handler.uncaughtException(currentThread, new Exception("Blah " + currentThread.getName() + " blah-blah-blah", cause));
+            handler.uncaughtException(currentThread,
+                                      new Exception("Blah " + currentThread.getName() + " blah-blah-blah", cause)
+                                     );
         }
     }
 
