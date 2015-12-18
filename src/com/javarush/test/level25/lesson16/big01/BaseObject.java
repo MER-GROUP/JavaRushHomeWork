@@ -37,4 +37,22 @@ public class BaseObject {
         this.radius = radius;
         this.isAlive=true;
     }
+
+    public void draw(){
+        //
+    }
+
+    public void move(){
+        //
+    }
+
+    public void die(){
+        this.isAlive=false;
+    }
+
+    public boolean isIntersec(BaseObject o){
+        double distanse=Math.sqrt(Math.pow(o.getX()-this.getX(),2)+Math.pow(o.getY()-this.getY(),2));
+        double max=o.getRadius()>this.getRadius()?o.getRadius():this.getRadius();
+        return distanse<max;
+    }
 }
