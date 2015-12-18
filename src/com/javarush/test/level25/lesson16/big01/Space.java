@@ -38,7 +38,7 @@ public class Space {
     public Space(int width, int height) {
         this.width = width;
         this.height = height;
-        this.ship=new SpaceShip();
+        this.ship=new SpaceShip(200,300,5);
         this.ufos=new ArrayList<>();
         this.rockets=new ArrayList<>();
         this.bombs=new ArrayList<>();
