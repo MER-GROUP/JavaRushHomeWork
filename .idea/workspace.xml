@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49e868cb-6c28-469e-9a04-9674b5bddb2b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/BaseObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Canvas.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Space.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Space.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Условие задачи.txt" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Условие задачи.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Bomb.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Bomb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Rocket.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Rocket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/SpaceShip.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/SpaceShip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Ufo.java" afterPath="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Ufo.java" />
     </list>
     <ignored path="JavaRushHomeWork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,17 +73,37 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Условие задачи.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Space.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseObject.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/BaseObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21786493">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Canvas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Canvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Space.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Space.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34858388">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -89,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/SpaceShip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -99,7 +123,27 @@
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Ufo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bomb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Bomb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rocket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Rocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -139,11 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Stand.java" />
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Arcanoid.java" />
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level24/lesson14/big01/Условие задачи.txt" />
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson02/task01/Solution.java" />
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson02/task02/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson02/home01/Column.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson05/task01/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson05/task02/Solution.java" />
@@ -187,9 +226,14 @@
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson09/task03/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson11/task01/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson11/task02/Solution.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Space.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Условие задачи.txt" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/BaseObject.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/SpaceShip.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Ufo.java" />
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Space.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Bomb.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Rocket.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Canvas.java" />
       </list>
     </option>
   </component>
@@ -943,7 +987,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25867507" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20977917" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2318612" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2318612" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19399707" sideWeight="0.50630915" order="4" side_tool="true" content_ui="combo" x="448" y="69" width="253" height="636" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21303074" sideWeight="0.5518868" order="1" side_tool="true" content_ui="tabs" />
@@ -981,8 +1025,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="level 25 lesson 05 task 01 completed" />
-    <MESSAGE value="level 25 lesson 05 task 02 completed" />
     <MESSAGE value="level 25 lesson 05 home 01 completed" />
     <MESSAGE value="level 25 lesson 07 task 01 completed" />
     <MESSAGE value="level 25 lesson 07 home 01 completed" />
@@ -1006,7 +1048,9 @@
     <MESSAGE value="Level 25 Lesson 11 Task 01 Completed" />
     <MESSAGE value="Level 25 Lesson 11 Task 02 Completed" />
     <MESSAGE value="Level 25 Lesson 16 Big 01 Part 01 Completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Level 25 Lesson 16 Big 01 Part 01 Completed" />
+    <MESSAGE value="Level 25 Lesson 16 Big 01 Part 02 Completed" />
+    <MESSAGE value="Level 25 Lesson 16 Big 01 Part 03 Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level 25 Lesson 16 Big 01 Part 03 Completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1023,34 +1067,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level14/lesson08/home02/Drink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1650165">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socket/ControlServer004.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0990099">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ThreadPoolExecutor/ThreadPoolExecutorSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2970297">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MySwing/testMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0660066">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MySwing/testMain.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -1351,10 +1367,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Rocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Bomb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Ufo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1362,7 +1394,23 @@
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/SpaceShip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1370,15 +1418,15 @@
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Условие задачи.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/Space.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level25/lesson16/big01/BaseObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34858388">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.21786493">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
