@@ -12,6 +12,7 @@ public class Space {
     private ArrayList<Ufo> ufos;
     private ArrayList<Rocket> rockets;
     private ArrayList<Bomb> bombs;
+    public static Space game;
 
     public int getWidth() {
         return width;
