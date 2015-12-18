@@ -44,6 +44,18 @@ public class Space {
         this.bombs=new ArrayList<>();
     }
 
+    public void run(){
+        //
+    }
+
+    public void draw(){
+        //
+    }
+
+    public void sleep(int ms){
+        //
+    }
+
     //main
     public static void main(String[] args) {
         //
